@@ -16,6 +16,7 @@ function postPreview(btn) {
     document.querySelector(".post-preview-date").textContent = post.date;
     document.querySelector(".post-preview-content").innerHTML = post.content;
     document.querySelector('.post-preview').classList.toggle('active');
+    document.querySelector('.post-preview').scrollTop = 0;
 
 }
 
