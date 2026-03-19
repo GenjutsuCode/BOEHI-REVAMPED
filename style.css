@@ -851,6 +851,36 @@ form input[type="button"]:hover {
     padding: 5px 0 0 2rem;
 }
 
+.gallery-top {
+    padding: 0 8.33%;
+    padding-top: 130px;
+    
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 40px 8.33%;
+
+
+}
+
+.gallery-grid .card {
+    grid-column: span 4;
+}
+
+.gallery-grid img {
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, .2);
+}
+
+.gallery-grid .card span {
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+}
+
 /* ========================
    MEDIA QUERIES
 ======================== */
@@ -904,6 +934,10 @@ form input[type="button"]:hover {
     .projects-grid .text-box,
     .projects-grid .img-wrapper {
         grid-column: span 12;
+    }
+
+    .gallery-grid .card {
+        grid-column: span 6;
     }
 }
 
@@ -1006,6 +1040,10 @@ form input[type="button"]:hover {
 
     .footer-brand {
         grid-column: span 2;
+    }
+
+    .gallery-grid .card {
+        grid-column: span 12;
     }
 }
 
