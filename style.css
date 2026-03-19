@@ -120,38 +120,8 @@ section {
     transform: translateX(5px);
 }
 
-.btn-impact {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    color: #ffffff;
-    font-family: inherit;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.btn-impact:hover {
-    background: #ffffff;
-    color: #004d00;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
 .arrow {
     transition: transform 0.3s ease;
-}
-
-.btn-impact:hover .arrow {
-    transform: translateX(5px);
 }
 
 /* ========================
@@ -340,7 +310,11 @@ nav {
 }
 
 .leadership-section div {
+    margin-top: 25px;
     color: #ffffff;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
 
 .impact-grid {
@@ -373,9 +347,6 @@ nav {
 
 .impact-card {
     grid-column: span 6;
-    /* background: rgba(255, 255, 255, 0.8); */
-    backdrop-filter: blur(10px);
-    /* fixed: was blur(px) */
     border: 1px solid rgba(0, 77, 0, 0.1);
     padding: 2.5rem;
     border-radius: 20px;
@@ -439,7 +410,7 @@ nav {
 .section-2-grid span {
     color: #ffffff;
     grid-column: span 7;
-    background: linear-gradient(-135deg, #001a00 0%, #004d00 30%, #006600 100%);;
+    background: linear-gradient(-135deg, #001a00 0%, #004d00 30%, #006600 100%);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
@@ -447,28 +418,36 @@ nav {
 }
 
 .mv-grid {
-    padding: 20px 15.33%;
+
+    padding: 0 15.33%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: 10px;
     text-align: center;
 }
 
 .mission-card {
     grid-column: span 6;
-    background-color: #E8F0E8;
+    background-color: #ffffff;
+    /* Clean white */
+    border-left: 5px solid #004d00;
+    /* Deep green accent */
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .vision-card {
     grid-column: span 6;
-    background-color: #FDF8E7;
+    background-color: #ffffff;
+    border-left: 5px solid #daa520;
+    /* Gold accent */
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .core-values-container {
@@ -477,6 +456,7 @@ nav {
 }
 
 .core-values-container h3 {
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
@@ -489,15 +469,40 @@ nav {
 .core-values-grid div {
     grid-column: span 1;
     text-align: center;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    background: #ffffff;
+    border: 1px solid rgba(0, 77, 0, 0.5);
+    /* Very faint green border */
     padding: 3rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 15px;
     text-transform: uppercase;
-    transition: .3s ease;
+    font-weight: 600;
+    color: #004d00;
+    transition: all 0.3s ease;
+
 }
 
 .core-values-grid div:hover {
-    transform: translateY(10px);
+    background: #004d00;
+    color: #daa520;
+    transform: translateY(-5px);
+}
+
+.drbode-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 10px 15.33%;
+}
+
+.drbode-grid img {
+    grid-column: span 3;
+}
+
+.drbode-grid img:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.drbode-grid img:last-child {
+    border-radius: 0 10px 10px 0;
 }
 
 .donate-section {
@@ -619,6 +624,41 @@ nav {
     text-align: right;
 }
 
+.merch-section {
+    text-align: center;
+}
+
+.merch {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 0;
+}
+
+.merch img {
+    background-color: #fff;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.merch-section button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    background: #004d00;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.merch-section button:hover {
+    transform: translateY(-5px);
+}
+
 .contact-section {
     width: 100%;
     padding: 40px 10px;
@@ -693,7 +733,7 @@ form textarea {
     height: 200px;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
     font-family: 'poppins', sans-serif;
     cursor: pointer;
     width: 35%;
@@ -707,7 +747,7 @@ form input[type="button"] {
     /* Smooth transition for focus */
 }
 
-form input[type="button"]:hover {
+form input[type="submit"]:hover {
     background-color: #daa520;
 }
 
@@ -800,8 +840,9 @@ form input[type="button"]:hover {
     padding: 20px 0;
     text-align: center;
 }
+
 .developer-credit a {
-    color: #daa520; 
+    color: #daa520;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -861,7 +902,7 @@ form input[type="button"]:hover {
 .gallery-top {
     padding: 0 8.33%;
     padding-top: 130px;
-    
+
 }
 
 .gallery-grid {
@@ -1026,6 +1067,11 @@ form input[type="button"]:hover {
 
     .core-values-container {
         padding: 20px;
+    }
+
+    .drbode-grid {
+
+        padding: 10px 20px;
     }
 
     .donate-grid img {
