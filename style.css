@@ -655,6 +655,7 @@ nav {
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 .merch-section button:hover {
     transform: translateY(-5px);
 }
@@ -929,6 +930,97 @@ form input[type="submit"]:hover {
     padding-top: 10px;
 }
 
+.blog-section {
+    padding: 130px 5.33%;
+}
+
+.blog-section h2 {
+    margin-bottom: 10px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 20px 0;
+    gap: 10px;
+
+}
+
+.post-card {
+    grid-column: span 4;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-card img {
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .2);
+}
+
+.post-subtitle {
+    font-size: 13px;
+}
+
+.post-date {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #777;
+    display: block;
+}
+
+.post-btn {
+    padding: 10px 24px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    background: #004d00;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-btn:hover {
+    transform: translateY(5px);
+}
+
+.post-preview {
+    width: 100%;
+    padding: 30px 15.33%;
+    padding-top: 130px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    overflow: scroll;
+    display: none;
+}
+
+.post-preview.active {
+    display: block;
+}
+.post-preview-close-btn {
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.post-preview-close-btn:hover {
+    color: #333;
+    border-color: #aaa;
+    background: #f5f5f5;
+}
 /* ========================
    MEDIA QUERIES
 ======================== */
@@ -985,6 +1077,10 @@ form input[type="submit"]:hover {
     }
 
     .gallery-grid .card {
+        grid-column: span 6;
+    }
+
+    .post-card {
         grid-column: span 6;
     }
 }
@@ -1097,6 +1193,15 @@ form input[type="submit"]:hover {
 
     .gallery-grid .card {
         grid-column: span 12;
+    }
+
+    .post-card {
+        grid-column: span 12;
+    }
+
+    .post-preview {
+        padding: 30px 20px;
+        padding-top: 130px;
     }
 }
 
