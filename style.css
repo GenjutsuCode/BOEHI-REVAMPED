@@ -11,6 +11,7 @@ a {
 .green {
     color: #004d00;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -295,6 +296,15 @@ nav {
     gap: 5px;
     flex-direction: column;
 }
+
+/* .founder-section {
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+.founder-section p{
+    margin-bottom: 15px;
+} */
 
 .impact-grid {
     padding: 80px 0;
