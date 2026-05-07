@@ -23,3 +23,18 @@ function postPreview(btn) {
 function closePreview(){
     document.querySelector('.post-preview').classList.toggle('active');
 }
+
+new Typed('#typed', {
+  strings: [
+    'education and impact.',
+    'mentorship and growth.',
+    'knowledge and purpose.',
+    'community and change.',
+  ],
+  typeSpeed: 60,
+  backSpeed: 35,
+  backDelay: 2000,
+  loop: true,
+  showCursor: true,
+  cursorChar: '|',
+})
