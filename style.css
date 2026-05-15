@@ -30,11 +30,7 @@ body {
 section {
     scroll-margin-top: 100px;
 }
-.top-banner{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
+
 .bg-landing {
     width: 100%;
     height: 60vh;
@@ -138,7 +134,7 @@ nav {
 }
 
 .logo {
-    width: 100px;
+    width: 90px;
     display: block;
 }
 
@@ -146,6 +142,7 @@ nav {
     display: flex;
     gap: 15px;
     list-style-type: none;
+    align-items: center;
 }
 
 .nav-links a {
@@ -153,12 +150,33 @@ nav {
     color: white;
     transition: .3s;
     padding: 6px 10px;
+    font-size: 12px;
 }
 
 .nav-links a:hover {
     background-color: #004d00;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 999px;
+}
+
+nav .donate-btn {
+    display: inline-block;
+    background-color: #004d00;
+    padding: 8px 16px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    transition: transform .3s;
+    text-transform: uppercase;
+}
+
+nav .donate-btn:hover {
+    transform: scale(1.07);
+    background-color: #004d00;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 /* ========================
@@ -252,6 +270,7 @@ nav {
 .hero img {
     width: 100%;
 }
+
 .section-tag-2 {
     display: inline-block;
     background: rgba(218, 165, 32, 0.15);
@@ -262,6 +281,7 @@ nav {
     font-size: 13px;
     margin-bottom: 1rem;
 }
+
 .leadership-section {
     width: 100%;
     background: linear-gradient(135deg, #001a00 0%, #004d00 60%, #006600 100%);
@@ -300,7 +320,7 @@ nav {
 }
 
 .leadership-section p {
-        max-width: 800px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     padding: 0 20px;
@@ -423,7 +443,8 @@ nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
     align-self: stretch;
 }
-.section-2-grid h3{
+
+.section-2-grid h3 {
     color: white;
     text-align: center;
 }
@@ -441,12 +462,14 @@ nav {
     border: 1px solid #daa520;
     /* box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); */
 }
-.about-text{
+
+.about-text {
     max-width: 800px;
     margin: auto;
     text-align: center;
     padding: 0 20px;
 }
+
 .mv-grid {
     padding: 20px 15.33%;
     padding-bottom: 0;
@@ -474,7 +497,9 @@ nav {
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
-.mission-card h3, .vision-card h3{
+
+.mission-card h3,
+.vision-card h3 {
     color: white;
     text-align: center;
 }
@@ -903,6 +928,7 @@ form input[type="submit"]:hover {
 .projects-grid img {
     border-radius: 10px;
 }
+
 .projects h2 {
     font-size: 2.0rem;
     color: #004d00;
@@ -929,9 +955,11 @@ form input[type="submit"]:hover {
 .projects ul {
     padding: 5px 0 0 2rem;
 }
-.projects ul li{
+
+.projects ul li {
     list-style-type: circle;
 }
+
 .gallery-top {
     padding: 0 8.33%;
     padding-top: 130px;
@@ -950,12 +978,14 @@ form input[type="submit"]:hover {
 .gallery-grid .card {
     grid-column: span 4;
 }
-.gallery-grid .card iframe{
+
+.gallery-grid .card iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 10px;
 }
+
 .gallery-grid img {
     border-radius: 5px;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, .2);
@@ -993,9 +1023,11 @@ form input[type="submit"]:hover {
     .impact-card {
         grid-column: span 12;
     }
-    .mv-grid{
+
+    .mv-grid {
         padding: 20px 20px 0;
     }
+
     .core-values-container {
         padding: 20px 15.33%;
     }
